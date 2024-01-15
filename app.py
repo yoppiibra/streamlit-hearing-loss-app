@@ -9,11 +9,8 @@ import plotly.graph_objects as go
 import pickle
 
 
-
-
 df = pd.read_csv('data//hearing_test.csv')
 loaded_model = pickle.load(open('lr_hearing_loss.sav', 'rb'))
-
 
 
 with st.sidebar:
