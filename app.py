@@ -53,7 +53,7 @@ if selected =='Graphs':
         st.plotly_chart(fig)
     
     if graph == 'Non Interactive':
-        plt.style.use(['science','notebook','grid'])
+        #plt.style.use(['science','notebook','grid'])
         plt.figure(figsize=(6,4), dpi=100)
         ax = sns.countplot(x='test_result', data=df, palette= 'spring')
         for p in ax.patches:
