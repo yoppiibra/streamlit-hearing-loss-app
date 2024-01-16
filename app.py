@@ -28,9 +28,9 @@ if selected =='Home':
         
         
 if selected =='Graphs':
-    st.header('Graph Hearing Loss Test')
+    st.header('Graphs of Data')
     
-    graph = st.selectbox('Chooses graph..?', ['None','Interactive', 'Non Interactive'])
+    graph = st.selectbox('What Kind of Graphs', ['None','Interactive', 'Non Interactive'])
     if graph =='None':
         pass
     if graph == 'Interactive':
@@ -75,7 +75,7 @@ if selected =='Graphs':
         st.pyplot(ax.get_figure())
         
         st.write('---------------------------------------------------')
-        plt.style.use('default')
+        
         metric = df.corr()
         mask = np.zeros_like(metric)
         mask[np.triu_indices_from(mask)]= True
