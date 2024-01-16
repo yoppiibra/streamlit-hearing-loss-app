@@ -110,5 +110,4 @@ if selected =='Project':
         
     if st.button('Test Result'):
         diagnosis = test_result([age,physical_score])
-        st.success(diagnosis)  
-    
+        st.success(diagnosis)
