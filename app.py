@@ -87,6 +87,7 @@ if selected =='Graphs':
         
     
 if selected =='Project':
+    st.header('Test Hearing Loss')
     age = st.number_input('your age', min_value =0, max_value= 100, step =1)
     physical_score = st.number_input('physical score', min_value = 00.00, max_value = 100.00, step =0.01)
     
