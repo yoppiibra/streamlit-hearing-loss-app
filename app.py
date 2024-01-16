@@ -80,7 +80,7 @@ if selected =='Graphs':
         mask = np.zeros_like(metric)
         mask[np.triu_indices_from(mask)]= True
         ax = sns.heatmap(metric, mask=mask, lw=1, annot=True, cmap='spring')
-        plt.title('Corelation Data')
+        plt.title('Correlation Data')
         st.pyplot(ax.get_figure())
         
         st.write('---------------------------------------------------')
